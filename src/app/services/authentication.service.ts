@@ -14,7 +14,7 @@ export class AuthenticationService {
 
   constructor(private afAuth: AngularFireAuth) {
     this.user = afAuth.authState;
-  }
+  } 
 
   resetPassword(email: string) {
     return this.afAuth.sendPasswordResetEmail(email)
